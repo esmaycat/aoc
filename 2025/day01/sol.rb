@@ -1,3 +1,5 @@
+# AOC 2025 Day 1 – expect input on stdin
+
 p1 = p2 = 0
 d = 50
 puts($<.each_line.map{ _1.tr('RL', '+-').to_i }.map { |r|
