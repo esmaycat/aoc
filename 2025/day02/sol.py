@@ -11,10 +11,8 @@ for a, b in ranges:
             continue 
     
         for s in range(1, lenid // 2 + 1):
-            if sid[:s]*(lenid // s) == sid:
-                break
-        else:
-            continue
+            if sid[:s]*(lenid // s) == sid: break
+        else: continue
         p2 += id
 
 print(p1)      # Part 1

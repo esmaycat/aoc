@@ -17,5 +17,5 @@ def remove(g: dict[complex, str] = g) -> int:
     for i in tr: del g[i]
     return len(tr)
 
-print(remove(g.copy()))   # Part 1
+print(remove(g.copy()))     # Part 1
 print(sum(iter(remove, 0))) # Part 2
