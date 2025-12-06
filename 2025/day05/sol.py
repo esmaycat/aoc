@@ -1,9 +1,7 @@
 # AOC 2025 Day 5 – expect input on stdin
 
-import operator as op
-
 b, ingredients = open(0).read().split('\n\n')
-ranges = sorted([eval(r.replace('-', ',')) for r in b.split('\n')], key=op.itemgetter(0))
+ranges = sorted(map(eval, b.replace('-', ',').split('\n')))
 ingredients = [*map(int, ingredients.split('\n'))]
 
 print(sum(any(a <= i <= b for a, b in ranges) for i in ingredients)) # Part 1
